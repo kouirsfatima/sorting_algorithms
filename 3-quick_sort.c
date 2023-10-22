@@ -19,7 +19,7 @@ int Quicksort(int *array, int draw, int high, size_t size)
 
 	pivot = array[high];
 
-	for (p = draw; p < high - 1; p++)
+	for (p = draw; p <= high - 1; p++)
 	{
 		if (array[p] < pivot)
 		{
