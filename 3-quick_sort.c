@@ -21,10 +21,9 @@ int Quicksort(int *array, int draw, int high, size_t size)
 
 	for (p = draw; p <= high - 1; p++)
 	{
-		if (array[p] < pivot)
+		if (array[p] <= pivot)
 		{
 			i++;
-			if (i < p)
 			{
 				temp = array[i];
 				array[i] = array[p];
