@@ -28,10 +28,10 @@ int Quicksort(int *array, int draw, int high, size_t size)
 				temp = array[i];
 				array[i] = array[p];
 				array[p] = temp;
-                if (i != p)
-				print_array(array, size);
+				if (i != p)
+					print_array(array, size);
 			}
-            
+
 		}
 	}
 	if (i + 1 != high)
@@ -80,4 +80,3 @@ void quick_sort(int *array, size_t size)
 	if (array != NULL && size > 1)
 		quicksort(array, 0, size - 1, size);
 }
-
