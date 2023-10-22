@@ -26,11 +26,11 @@ void selection_sort(int *array, size_t size)
 			}
 		}
 
-		if (min != j)
 		{
 			temp = array[j];
 			array[j] = array[min];
 			array[min] = temp;
+            if (min != j)
 			print_array(array, size);
 		}
 	}
