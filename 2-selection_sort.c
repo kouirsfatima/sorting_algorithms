@@ -30,8 +30,8 @@ void selection_sort(int *array, size_t size)
 			temp = array[j];
 			array[j] = array[min];
 			array[min] = temp;
-            if (min != j)
-			print_array(array, size);
+			if (min != j)
+				print_array(array, size);
 		}
 	}
 }
